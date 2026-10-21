@@ -1,0 +1,408 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="أكبر مجموعة عبارات سواقين التكاتك والعبارات الشعبية المصرية والسرسجية المضحكة.">
+    <meta name="keywords" content="عبارات تكاتك, عبارات سرسجية, كلام سواقين التكاتك, عبارات شعبية مصرية">
+    <meta name="author" content="خالد سامح">
+    <meta name="theme-color" content="#e60000">
+
+    <title>عبارات سواقين التكاتك | عبارات سرسجية</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #00e5ff, #00bcd4);
+            font-family: Arial, Tahoma, sans-serif;
+            color: #222;
+            padding: 18px;
+        }
+
+        header {
+            max-width: 1100px;
+            margin: 0 auto 25px;
+            text-align: center;
+        }
+
+        h1 {
+            background: #e60000;
+            color: #fff;
+            border: 3px solid #ffeb00;
+            border-radius: 18px;
+            padding: 22px 12px;
+            font-size: clamp(23px, 5vw, 36px);
+            box-shadow: 0 6px 15px #0003;
+        }
+
+        header p {
+            margin-top: 15px;
+            font-size: 17px;
+            line-height: 1.8;
+            font-weight: bold;
+        }
+
+        .search-box {
+            max-width: 700px;
+            margin: 20px auto;
+            display: flex;
+            gap: 10px;
+        }
+
+        .search-box input {
+            width: 100%;
+            min-width: 0;
+            padding: 14px;
+            border: 2px solid #e60000;
+            border-radius: 12px;
+            font-size: 16px;
+            outline: none;
+        }
+
+        .search-box input:focus {
+            border-color: #222;
+        }
+
+        .count {
+            text-align: center;
+            font-weight: bold;
+            margin: 20px 0;
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+            gap: 18px;
+        }
+
+        .card {
+            background: #e60000;
+            color: #ffeb00;
+            border: 3px solid #ffeb00;
+            border-radius: 17px;
+            padding: 25px 16px;
+            text-align: center;
+            font-size: 21px;
+            font-weight: bold;
+            line-height: 1.8;
+            box-shadow: 0 5px 12px #0002;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 18px;
+            overflow-wrap: anywhere;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px #0003;
+        }
+
+        .card-number {
+            display: block;
+            color: #fff;
+            font-size: 13px;
+            opacity: 0.9;
+        }
+
+        .copy-btn {
+            border: 2px solid #ffeb00;
+            border-radius: 10px;
+            background: #222;
+            color: #fff;
+            padding: 10px;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .copy-btn:hover {
+            background: #333;
+        }
+
+        .empty {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 30px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            margin: 35px auto 10px;
+            padding: 20px;
+            font-weight: bold;
+            line-height: 2;
+        }
+
+        @media (max-width: 500px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                gap: 12px;
+            }
+
+            .card {
+                padding: 20px 12px;
+                font-size: 19px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🔥 عبارات سواقين التكاتك 🔥</h1>
+    <p>أجمد العبارات الشعبية والسرسجية المصرية.. اختار عبارتك وخلي التوك توك يتكلم! 😎</p>
+
+    <div class="search-box">
+        <input type="search" id="search" placeholder="ابحث عن عبارة تعجبك..." aria-label="البحث عن عبارة">
+    </div>
+
+    <div class="count" id="count">عدد العبارات: 120</div>
+</header>
+
+<main class="container" id="phrases">
+
+    <div class="card">عينيك يا رخم ده صاحبها فخم! 😎</div>
+    <div class="card">داخل شمال والدنيا كلها في حالي! 🔥</div>
+    <div class="card">هيبة من غير صوت.. والجدعنة بالأصول.</div>
+    <div class="card">اللي باعنا خسر دلعنا.</div>
+    <div class="card">إحنا الملوك والباقي جمهور.</div>
+    <div class="card">ماشي بمزاجي مش بمزاج حد.</div>
+    <div class="card">على الله حكايتنا والرزق على الله.</div>
+    <div class="card">الجدع جدع ولو الزمن خانه.</div>
+    <div class="card">خليك في حالك ترتاح بالك.</div>
+    <div class="card">الدنيا مدرسة وإحنا اللي دفعنا المصاريف.</div>
+
+    <div class="card">مش كل ضحكة معناها مبسوط.</div>
+    <div class="card">اللي يتكبر على الناس الأيام تعلمه.</div>
+    <div class="card">أصلي ومش محتاج شهادة.</div>
+    <div class="card">الرجولة مواقف مش مجرد حروف.</div>
+    <div class="card">إحنا الأصل والباقي تقليد.</div>
+    <div class="card">اللي فاكر نفسه كبير لسه ما شافش الدنيا.</div>
+    <div class="card">قلبي أبيض بس وقت الجد حديد.</div>
+    <div class="card">ماشي ثابت والخطوة محسوبة.</div>
+    <div class="card">اللي يجي على أصلي ما يلزمنيش.</div>
+    <div class="card">مش كل ساكت ضعيف، ساعات السكوت هيبة.</div>
+
+    <div class="card">ضحكتنا عالية وهمومنا مستخبية.</div>
+    <div class="card">عايشين بالستر ورافعين الراس.</div>
+    <div class="card">اللي معاه ربنا عمره ما يخاف.</div>
+    <div class="card">رزقك مكتوب ومحدش هياخده منك.</div>
+    <div class="card">الجدعنة مش كلام، الجدعنة أفعال.</div>
+    <div class="card">أهو كله ماشي، بس مين مرتاح؟</div>
+    <div class="card">على نياتنا ربنا رازقنا.</div>
+    <div class="card">إحنا ناس بسيطة بس غالية.</div>
+    <div class="card">اللي عاشرنا يعرف مقامنا.</div>
+    <div class="card">أصلي حتى لو لبسي عادي.</div>
+
+    <div class="card">خليك تقيل، الدنيا مش مستاهلة.</div>
+    <div class="card">اللي يبيعك بيعه ببلاش.</div>
+    <div class="card">الوقت بيكشف كل واحد على حقيقته.</div>
+    <div class="card">ما بنحسبهاش بالمظاهر، بنحسبها بالأصول.</div>
+    <div class="card">مش كل صاحب صاحب، ومش كل قريب قريب.</div>
+    <div class="card">خليك راجل في زمن قل فيه الرجال.</div>
+    <div class="card">اللي جاي أحلى بإذن الله.</div>
+    <div class="card">رزقي على الله ومش مستني من حد.</div>
+    <div class="card">اللي مش عاجبه طريقي، الطريق واسع.</div>
+    <div class="card">سيبها على الله ونام مرتاح.</div>
+
+    <div class="card">التوك توك بتاعي والشارع حكايتي.</div>
+    <div class="card">اركب يا باشا.. المشوار علينا والضحكة عليك.</div>
+    <div class="card">وسع يا جدع.. الرزق جاي في الطريق.</div>
+    <div class="card">توك توك بس عامل دوشة في الحارة.</div>
+    <div class="card">من أول الحارة لآخر الدنيا.</div>
+    <div class="card">الطريق طويل بس إحنا قدها.</div>
+    <div class="card">بنلف الدنيا ورزقنا على الله.</div>
+    <div class="card">كلاكس واحد يكفي عن ألف كلمة.</div>
+    <div class="card">توك توك صغير وطموح كبير.</div>
+    <div class="card">اللي رايح مشوار يجهز حسابه.</div>
+
+    <div class="card">يا دنيا هاتي آخرك، إحنا لسه في الأول.</div>
+    <div class="card">ماشيين بالبركة والنية الصافية.</div>
+    <div class="card">الشارع شاهد والجدعنة عنوان.</div>
+    <div class="card">على الرصيف حكايات، وفي القلب أسرار.</div>
+    <div class="card">إحنا بتوع المواقف مش بتوع الكلام.</div>
+    <div class="card">كلمة مني تكفي وموقف مني يثبت.</div>
+    <div class="card">مافيش كبير على الزمن.</div>
+    <div class="card">اللي فات مات واللي جاي غيب.</div>
+    <div class="card">الضحكة ببلاش بس راحة البال غالية.</div>
+    <div class="card">أحلى أيام العمر لسه ما جتش.</div>
+
+    <div class="card">لو غبت اسأل عني، هتلاقيني في الزحمة.</div>
+    <div class="card">ماشي في حالي ومش شاغل بالي.</div>
+    <div class="card">اللي يعرفنا يحبنا واللي يجهلنا يلومنا.</div>
+    <div class="card">الأصل غلاب حتى لو الحال مال.</div>
+    <div class="card">اللي قلبه نضيف عمره ما يخسر.</div>
+    <div class="card">خليك عزيز النفس ولو جيبك فاضي.</div>
+    <div class="card">الفلوس تروح وتيجي، الأصول مبتتغيرش.</div>
+    <div class="card">الرجولة إنك تصون العشرة.</div>
+    <div class="card">الناس معادن والمواقف اختبار.</div>
+    <div class="card">اللي بيضحك كتير جواه حكايات.</div>
+
+    <div class="card">ما دام ربنا موجود، مافيش يأس.</div>
+    <div class="card">الصبر مفتاح والفرج من عند الله.</div>
+    <div class="card">كل تأخيرة وفيها خيرة.</div>
+    <div class="card">اللي مكتوبلك هتشوفه مهما طال الطريق.</div>
+    <div class="card">الحمد لله على كل حال.</div>
+    <div class="card">بنبدأ من الصفر ومش بنخاف.</div>
+    <div class="card">طول ما في نفس، في أمل.</div>
+    <div class="card">الأيام الصعبة بتصنع ناس قوية.</div>
+    <div class="card">مش مهم وصلت إمتى، المهم وصلت إزاي.</div>
+    <div class="card">خطوة بخطوة نوصل للحلم.</div>
+
+    <div class="card">يا بخت اللي قلبه مرتاح.</div>
+    <div class="card">ضحكة صافية أحسن من ألف مصلحة.</div>
+    <div class="card">اللي يحب الخير للناس ربنا يكرمه.</div>
+    <div class="card">أحلى رزق راحة البال.</div>
+    <div class="card">النية الطيبة عمرها ما تضيع.</div>
+    <div class="card">خليك سبب فرحة مش سبب وجع.</div>
+    <div class="card">اللي يسند الناس ربنا يسنده.</div>
+    <div class="card">الدنيا دوارة، اعمل خير تلاقي خير.</div>
+    <div class="card">القلوب الطيبة رزق من ربنا.</div>
+    <div class="card">الستر والصحة أغلى من الدنيا.</div>
+
+    <div class="card">مش كل اللي يلمع دهب.</div>
+    <div class="card">خليك على طبيعتك، التقليد مش ليك.</div>
+    <div class="card">اللي عنده أصل عمره ما يضيعه.</div>
+    <div class="card">أفعالنا هي اللي بتتكلم عننا.</div>
+    <div class="card">اللي يقدر العشرة يستاهل المحبة.</div>
+    <div class="card">ما تحكمش على كتاب من غلافه.</div>
+    <div class="card">الكلمة الحلوة بتفتح ألف باب.</div>
+    <div class="card">الاحترام مش ضعف، ده تربية.</div>
+    <div class="card">اللي يعرف قيمته مش محتاج يثبتها.</div>
+    <div class="card">خليك كبير بأخلاقك مش بصوتك.</div>
+
+    <div class="card">يا رب رزق حلال وقلب مرتاح.</div>
+    <div class="card">صباح الرزق على أهل الجدعنة.</div>
+    <div class="card">مساء الخير على كل قلب طيب.</div>
+    <div class="card">اللهم طريق سهل ورزق واسع.</div>
+    <div class="card">ابتسم، يمكن بكرة أجمل.</div>
+    <div class="card">ربنا يفرح كل قلب شايل هم.</div>
+    <div class="card">ربك كريم والفرج قريب.</div>
+    <div class="card">أحلامنا كبيرة وربنا أكبر.</div>
+    <div class="card">يا رب نهاية تفرح القلب.</div>
+    <div class="card">الحمد لله اللي ساترها معانا.</div>
+
+    <div class="card">اللي فاهمنا على قدنا، واللي مش فاهمنا براحتُه.</div>
+    <div class="card">مش داخل سباق مع حد، أنا ليا طريقي.</div>
+    <div class="card">الجدعنة مش تريند، دي طبع.</div>
+    <div class="card">مش كل يوم عيد، بس كل يوم درس.</div>
+    <div class="card">عيش بسيط وسيب السيرة الحلوة.</div>
+    <div class="card">ما تندمش على طيبة قلبك.</div>
+    <div class="card">اللي بيحترم نفسه الناس تحترمه.</div>
+    <div class="card">خلي ضميرك مرتاح والباقي يهون.</div>
+    <div class="card">بكرة نقول يا سلام على اللي فات.</div>
+    <div class="card">آخر الكلام: ربنا يديم الستر.</div>
+
+    <div class="card">عامل نفسي مش واخد بالي وأنا واخد بالي من كله 😂</div>
+    <div class="card">أنا مش غامض، أنت بس مش مركز 😏</div>
+    <div class="card">يا جبل ما يهزك ريح، بس هز البنزين شوية 😂</div>
+    <div class="card">الهيبة هيبة حتى لو راكب توك توك 😎</div>
+    <div class="card">أنا هادي لحد ما الأغنية تيجي على مزاجي 🔊</div>
+    <div class="card">داخل أجيب عيش راجع بحكاية 😂</div>
+    <div class="card">مشوار صغير ومغامرة كبيرة.</div>
+    <div class="card">الشارع ده حافظ خطواتي أكتر من صحابي.</div>
+    <div class="card">يا رب يوم من غير مخالفات ولا مشاكل 😂</div>
+    <div class="card">بنزين على قد الجيب وأحلام على قد السما.</div>
+
+</main>
+
+<footer>
+    <p>🔥 عبارات شعبية مصرية من قلب الشارع 🔥</p>
+    <p>جميع الحقوق محفوظة © 2026</p>
+    <p>اخوكو كريم الشرقاوي</p>
+</footer>
+
+<script>
+    const search = document.getElementById("search");
+    const container = document.getElementById("phrases");
+    const cards = Array.from(container.querySelectorAll(".card"));
+    const count = document.getElementById("count");
+
+    cards.forEach((card, index) => {
+        const phrase = card.textContent.trim();
+        card.textContent = "";
+
+        const number = document.createElement("span");
+        number.className = "card-number";
+        number.textContent = "عبارة رقم " + (index + 1);
+
+        const text = document.createElement("span");
+        text.textContent = phrase;
+
+        const button = document.createElement("button");
+        button.className = "copy-btn";
+        button.type = "button";
+        button.textContent = "نسخ العبارة 📋";
+
+        button.addEventListener("click", async () => {
+            try {
+                await navigator.clipboard.writeText(phrase);
+                button.textContent = "تم النسخ ✓";
+            } catch {
+                const textarea = document.createElement("textarea");
+                textarea.value = phrase;
+                document.body.appendChild(textarea);
+                textarea.select();
+                const copied = document.execCommand("copy");
+                textarea.remove();
+                button.textContent = copied ? "تم النسخ ✓" : "تعذر النسخ";
+            }
+
+            setTimeout(() => {
+                button.textContent = "نسخ العبارة 📋";
+            }, 1500);
+        });
+
+        card.append(number, text, button);
+    });
+
+    function filterPhrases() {
+        const value = search.value.trim().toLowerCase();
+        let visible = 0;
+
+        cards.forEach(card => {
+            const matches = card.textContent.toLowerCase().includes(value);
+            card.hidden = !matches;
+            if (matches) visible++;
+        });
+
+        count.textContent = "عدد العبارات المعروضة: " + visible;
+
+        let empty = document.getElementById("empty");
+
+        if (visible === 0) {
+            if (!empty) {
+                empty = document.createElement("div");
+                empty.id = "empty";
+                empty.className = "empty";
+                empty.textContent = "ملقيناش عبارة بالكلام ده، جرّب كلمة تانية 😅";
+                container.appendChild(empty);
+            }
+        } else if (empty) {
+            empty.remove();
+        }
+    }
+
+    search.addEventListener("input", filterPhrases);
+</script>
+
+</body>
+</html>
